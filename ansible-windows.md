@@ -70,5 +70,5 @@ ansible_ssh_private_key_file=/root/.ssh/id_rsa #путь к приватному
 ansible_python_interpreter=/usr/bin/python3 
 ```
 
-
-
+Полезная ссылка:  
+https://internet-lab.ru/openssh_windows_server_2012_r2
