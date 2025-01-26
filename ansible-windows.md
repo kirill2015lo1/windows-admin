@@ -29,7 +29,8 @@ https://github.com/PowerShell/Win32-OpenSSH/releases
 Далее открываем Powershell от администратора, если у нас Windows 10, перед выполнением скрипта нужно выполнить команду ниже, иначе будет ошибка:  
 `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 
-Далее идет скрипт для установки ssh-server:
+Далее идет скрипт для установки ssh-server, заменяем поле "ВАШ КЛЮЧ", на ранее выведенный публичный ключ, и копируем все команды вместе и вставляем  
+в powershell от имени админа,(можно просто по одной команде поочередно вводить):
 ```
 cd C:\OpenSSH    
 .\install-sshd.ps1
