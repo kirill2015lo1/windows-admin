@@ -12,13 +12,13 @@ python3 -m pip install ansible --break-system-packages
 ```
 ssh-keygen
 ```
-Жмем 3 раза enter и далее выполняем
+3 раза enter и далее выполняем
 ```
 cat /USER_NAME/.ssh/id_rsa.pub
 ```
 Сохраняем где то выведенные ключ  
 
-Нам windows машине, которой мы хотим управлять нужно установить OpenSSH-Win64.zip, для его надо перейти по ссылке:  
+На windows машине, которой мы хотим управлять нужно установить OpenSSH-Win64.zip, для его надо перейти по ссылке:  
 https://github.com/PowerShell/Win32-OpenSSH/releases  
 Качаем только файл OpenSSH-Win64.zip из последего релиза
 
