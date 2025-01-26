@@ -1,6 +1,6 @@
 Настройка управления windows 10 и windows server 2012 для управления через ansible с помощью ssh из debian 12: 
 
-Если хост с Debian новый то выполняем:
+Если хост с Debian новый то для установки ansible выполняем:
 ```
 sudo apt update
 sudo apt install python3 python3-pip
