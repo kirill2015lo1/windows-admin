@@ -58,16 +58,16 @@ ipconfig /all
 
 Пример файлика hosts, 
 ```
-srv-rds1 ansible_host=192.168.11.66 #тут поочередно указываем все машины с Windows по моему примеру
+rd ansible_host=172.168.10.10 #тут поочередно указываем все машины с Windows по моему примеру
 [windows] #тут обьеденение их в группу, для одновременного управления несколькими
-srv-rds1 
+rd
 [windows:vars] #к каждой группе из windows машин добавляем эти аргументы, для Linux групп это не надо
-ansible_user=tsuran
+ansible_user=user #логин учетки, обязательно администратора
 ansible_shell_type = powershell
 shell_type = powershell
 [all:vars] 
 ansible_ssh_private_key_file=/root/.ssh/id_rsa #путь к приватному ключу
-ansible_python_interpreter=/usr/bin/python3 
+ansible_python_interpreter=/usr/bin/python3  #версию интерпритатора можно указать другую
 ```
 
 Полезная ссылка:  
