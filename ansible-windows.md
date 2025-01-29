@@ -38,12 +38,12 @@ Start-Service sshd
 Start-Service ssh-agent
 Set-Service -Name sshd -StartupType Automatic
 Set-Service -Name ssh-agent -StartupType Automatic
-Get-Service sshd
-Get-Service ssh-agent
 New-Item -Path "C:\ProgramData\ssh\administrators_authorized_keys" -ItemType File
 Add-Content -Path "C:\ProgramData\ssh\administrators_authorized_keys" -Value "ВАШ SSH КЛЮЧ"
 New-NetFirewallRule -Protocol TCP -LocalPort 22 -Direction Inbound -Action Allow -DisplayName SSH
 ipconfig /all
+Get-Service sshd
+Get-Service ssh-agent
 ```
 Вместо `"ВАШ SSH КЛЮЧ"` вставишь ваш публичный ключ, с хоста, который будет управлять через ansible этой windows машиной  
 
